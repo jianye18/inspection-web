@@ -132,7 +132,7 @@
       display: none;
     }
     .body{
-      height: ~'calc(100vh - 150px)' !important;
+      /*height: ~'calc(100vh - 150px)' !important;*/
       min-height: initial;
       overflow: auto;
     }
@@ -158,7 +158,7 @@
           </div>
         </Drawer>
         <div class="layout-logo" @click="toHome">
-          <img src="../../assets/images/logo.png" style="max-width: 100%;max-height: 40px; margin-top: 10px;"/>
+          <img src="../../assets/images/logo.png" style="max-width: 100%;max-height: 40px; margin-top: 14px;"/>
         </div>
         <div class="layout-nav">
           <ul class="nav">

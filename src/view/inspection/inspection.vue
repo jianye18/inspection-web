@@ -59,7 +59,7 @@
       box-sizing: border-box;
     }
     .body{
-      height: ~'calc(100vh - 150px)' !important;
+      /*height: ~'calc(100vh - 150px)' !important;*/
       min-height: initial;
       overflow: auto;
     }

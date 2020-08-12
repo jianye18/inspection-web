@@ -64,18 +64,18 @@
     </div>
     <div class="detail-data">
       <Row style="border-bottom: 1px solid #e5e5e5;">
-        <Col span="22" offset="1" class="detail-data-title">{{articleData.title}}</Col>
+        <Col span="24" class="detail-data-title">{{articleData.title}}</Col>
       </Row>
       <Row>
-        <Col span="6" offset="1" class="article_font">文章类型：{{articleData.typeName}}</Col>
+        <Col span="6" class="article_font">文章类型：{{articleData.typeName}}</Col>
         <Col span="6" offset="1" class="article_font">阅读量：{{articleData.readCount}}</Col>
       </Row>
       <Row>
-        <Col span="6" offset="1" class="article_font">来源：{{articleData.author}}</Col>
+        <Col span="6" class="article_font">来源：{{articleData.author}}</Col>
         <Col span="6" offset="1" class="article_font">发布时间：{{articleData.publishTime}}</Col>
       </Row>
       <Row style="border-bottom: 1px solid #e5e5e5;">
-        <Col span="22" offset="1" class="article_font">附件：
+        <Col span="24" class="article_font">附件：
           <span v-if="articleData.annexList" v-for="item in articleData.annexList" :key="item.name" style="margin-right: 15px;">
               <router-link target="_blank" :to="{path:'/view_file',query:{path:  item.path}}">{{item.name}}</router-link>
             </span>
