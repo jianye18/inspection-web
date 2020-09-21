@@ -118,13 +118,13 @@ export default {
         {
           title: '样品名称',
           key: 'sample',
-          width: 300,
+          width: 180,
           tooltip: true
         },
         {
           title: '公布机构',
           align: 'center',
-          width: 180,
+          width: 160,
           key: 'institution',
           tooltip: true
         },

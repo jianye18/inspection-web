@@ -60,8 +60,11 @@
     }
     .body{
       /*height: ~'calc(100vh - 150px)' !important;*/
-      min-height: initial;
+      min-height: 0;
       overflow: auto;
+    }
+    /deep/ .ivu-col-offset-1:first-child{
+      margin-left: 0 !important;
     }
   }
 </style>

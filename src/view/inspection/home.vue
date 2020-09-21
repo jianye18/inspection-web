@@ -218,7 +218,8 @@ export default {
         { value: 'CC', label: '标准', path: 'criterion' },
         { value: 'SC', label: '抽检数据', path: 'spotCheck' },
         { value: 'FC', label: '监督检查', path: 'flightCheck' },
-        { value: 'AC', label: '文章', path: 'article' }
+        { value: 'AC', label: '文章', path: 'article' },
+        { value: 'AW', label: '问答', path: 'answer' }
         // { value: 'info', label: '行业需求', path: 'information' }
       ],
       activeIdx: 0,
@@ -291,6 +292,9 @@ export default {
   },
   methods: {
     changeMenu (val, path, idx) {
+      if (val === 'AW') {
+        window.open('http://www.hzpwd.cn/')
+      }
       let _this = this
       if (_this.activeIdx !== idx) {
         this.$store.dispatch('CreateType', val)
